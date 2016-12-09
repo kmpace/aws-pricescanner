@@ -6,9 +6,13 @@
     "react-scripts": "0.7.0"
   },
   "dependencies": {
+    "aws-sdk": "^2.7.11",
+    "bluebird": "^3.4.6",
     "cheerio": "^0.22.0",
+    "cors": "^2.8.1",
     "create-react-app": "^0.6.0",
     "firebase": "^3.5.1",
+    "promise": "^7.1.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",

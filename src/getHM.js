@@ -5,6 +5,8 @@ var url = 'http://www.hm.com/us/product/49719?article=49719-A';
 
 
 request(url , function(error, response, html) {
+
+
        var productPrice;
        var productName;
        var company;
@@ -50,8 +52,8 @@ request(url , function(error, response, html) {
         })
         
     
-    var header =  $('#header a')
-    var company =  $(header).children('img').attr('alt');
+    var headerhtml =  $('#header a')
+    var company =  $(headerhtml).children('img').attr('alt');
     json.company = company;
 
     console.log(company);
