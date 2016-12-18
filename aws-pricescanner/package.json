@@ -3,21 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "concurrently": "^3.1.0",
     "react-scripts": "0.8.4"
   },
   "dependencies": {
-    "aws-sdk": "^2.7.14",
+    "aws-sdk": "^2.7.15",
     "bluebird": "^3.4.6",
     "cheerio": "^0.22.0",
     "cors": "^2.8.1",
     "express": "^4.14.0",
+    "node-getpocket": "^1.0.0",
     "promise": "^7.1.1",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "request": "^2.79.0"
+    "request": "^2.79.0",
+    "stdio": "^0.2.7"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "node start-client.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
